@@ -24,6 +24,7 @@
 	      console.log(response);
       
 	      $('#res').text(response.login);
+	      $('#imgRes').html('<img src='+response.avatar_url+'/>);
 
       }
     });		
@@ -40,6 +41,11 @@
    <p>Here goes response</p>
 	
 	<div id='res'></div>
+	
+	<div id='imgRes'>
+		
+	</div>
+	
 
    
 
