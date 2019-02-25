@@ -19,7 +19,8 @@
       url: 'https://api.github.com/users/isudarsan',
       contentType: 'application/json',      
       success: function(resultData) {
-        $('#res').text(resultData);
+       alert(resultData);
+	      $('#res').text(resultData);
 
       }
     });		
@@ -35,7 +36,9 @@
 <body >
 <h1>BitBrains</h1>
 <hr/>
-   <p id="res"></p>
+   <p>Here goes response</p>
+	
+	<div id='res'></div>
 
    
 
