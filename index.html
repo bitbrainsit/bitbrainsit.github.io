@@ -19,8 +19,9 @@
       url: 'https://api.github.com/users/isudarsan',
       contentType: 'application/json',      
       success: function(resultData) {
-       alert(resultData);
-	      $('#res').text(resultData);
+	      var response = JSON.parse(JSON.stringify(resultData));
+       alert(response);
+	      $('#res').html(response);
 
       }
     });		
