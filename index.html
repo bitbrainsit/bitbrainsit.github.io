@@ -25,7 +25,9 @@
       
 	      $('#res').text(response.login);
 	      
-	       $('#imgRes').html('<img src="+response.avatar_url+" />');
+	      $('#imgRes').attr('src', response.avatar_url);
+	      
+	      
 	    
 	      
 	      
@@ -46,7 +48,7 @@
 	
 	<div id='res'></div>
 	
-	<div id='imgRes'>
+	<img id='imgRes'>
 		
 	</div>
 	
