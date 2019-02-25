@@ -24,7 +24,11 @@
 	      console.log(response);
       
 	      $('#res').text(response.login);
-	      $('#imgRes').html('<img src='+response.avatar_url+'/>);
+	      
+	       $('#imgRes').html('<img src="+response.avatar_url+" />');
+	    
+	      
+	      
 
       }
     });		
