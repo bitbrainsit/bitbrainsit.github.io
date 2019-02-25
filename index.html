@@ -30,8 +30,8 @@
             
 			   $.ajax({
       type: 'GET',
-      url: url,
-      contentType: 'https://api.github.com/users/isudarsan',      
+      url: 'https://api.github.com/users/isudarsan',
+      contentType: 'application/json',      
       success: function(resultData) {
         $('#res').html(resultData);
 
